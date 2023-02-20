@@ -1,5 +1,75 @@
-<!--
-    Replace this with your working code from Lab 2, and include:
-    - The styles in this folder's `style.css`
-    - The script in script.js, which should be included via a `<script src="script.js" >` call before your closing </body> tag 
--->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chris Sharkey's Labs</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header"><h1>Chris Sharkey's Labs For INST377</h1></header>
+      <div class="container">
+        <div class="left_section box">
+          <h2 class="subtitle">Albums</h2>
+          <ol class="box">
+            <li>Appetite for Destruction by Guns N' Roses</li>
+            <li>blkswn by Smino</li>
+            <li>From The Fires by Greta Van Fleet</li>
+            <li>The Perfect LUV Tape by Lil Uzi Vert</li>
+            <li>Jeffery by Young Thug</li>
+          </ol>
+        </div>
+        <div class="right_section box">
+          <h2 class="subtitle">Image Carousel</h2>
+          <div class="carousel">
+            <button class="prev">Previous</button>
+            <div class="slides">
+              <div class="carousel_item visible">
+                <img
+                  src="images/terps_logo.png"
+                  alt="Maryland Terrapins logo"
+                />
+              </div>
+              <div class="carousel_item hidden">
+                <img
+                  src="images/appetite_for_destruction.jpg"
+                  alt="Appetite for Destruction album cover"
+                />
+              </div>
+              <div class="carousel_item hidden">
+                <img src="images/spurs.jpg" alt="Tottenham Hotspur logo" />
+              </div>
+              <div class="carousel_item hidden">
+                <img src="images/golf.jpg" alt="Golf" />
+              </div>
+            </div>
+            <button class="next">Next</button>
+          </div>
+          <div>
+            <p class="box">
+              These are images to represent myself. The first is the UMD logo of
+              the terrapin, as I go to the school and I support the sports
+              teams. Next is the Appetite for Destruction album cover by Guns N'
+              Roses, as it is my favorite album of all time. Following is the
+              Tottenham Hotspur logo, which is the team I support. Last is a an
+              image of golf, as I love to play in my free time.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <p>
+        Link to my GitHub:
+        <a
+          href="https://github.com/chrissharkey1"
+          target="_blank"
+          rel="noopener noreferrer"
+          >chrissharkey1 on GitHub
+        </a>
+      </p>
+    </footer>
+  </body>
+  <script src="script.js"></script>
+</html>
