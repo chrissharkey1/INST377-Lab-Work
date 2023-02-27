@@ -75,13 +75,12 @@ form {
   flex:1;
 }
 
-.header {
+header {
   padding-top: 1rem;
   padding-left: 1rem;
   padding-right: 1rem;
   padding-bottom: 1.5rem;
 }
-
 
 /*
   This rule implies that the H1 tag lives within another HTML tag
@@ -89,12 +88,11 @@ form {
   Those rules won't apply to an h1 that's outside a block with the class of 'header'
 */
 
-.header h1 {
+header h1 {
   display: block;
   /* this will push other blocks out of the way */
 
   /* colors */
-  background-color: #A2A77F;
   color: #4a4a4a;
 
   /* shapes */
@@ -102,12 +100,7 @@ form {
   font-size: 1.5rem;
   padding: 1.25rem;
   margin:0; /* removing the margin on h1 tags means the header pins to the top if we move */
-
-
-  /* box-shadows are fancy */
-  box-shadow: 0 0.5em 1em -0.125em rgb(10 10 10 / 10%), 0 0 0 1px rgb(10 10 10 / 2%);
 }
-
 
 /*
   Rules can be combined on a block to apply the 'cascade' in order
@@ -120,13 +113,18 @@ form {
 
 .box {
   background-color: #E3E7AF;
-  border: 2px dashed;
+  border: 3.5px dashed;
+  border-color: #966419;
   border-radius: 4px;
 
   width: fit-content;
   height:fit-content;
   padding: 1.5rem;
   margin: 0 auto;
+}
+
+.full-width {
+  width: 100%;
 }
 
 .left_section {
@@ -305,7 +303,7 @@ form input {
     /* Rules in here will only apply when a screen is the correct size */
     /* check it out by using your developer tools to shrink your screen-size */
     .container {
-      background-color: rgba(204, 8, 162, 0.65);
+      background-color: rgba(73, 127, 52, 0.65);
       flex-direction: column;
       justify-content: center;
       align-items: center;
