@@ -11,7 +11,7 @@ Form Styles
 */
 
 html {
-  background-color: #fff;
+  background-color: #E3E7AF;
   font-size: 16px;
   min-width: 300px;
   overflow-x: hidden;
@@ -33,16 +33,15 @@ body {
   font-family: ‘Segoe UI’, Candara, ‘Bitstream Vera Sans’, ‘DejaVu Sans’, ‘Bitsream Vera Sans’, ‘Trebuchet MS’, Verdana, ‘Verdana Ref’, sans-serif;
   font-weight: 400;
   line-height: 1.5;
-  background-color: rgb(239, 239, 239);
+  background-color: #EFF1C5;
 }
-
 
 a {
   display: inline-block;
   text-decoration: none;
 }
 
-h2 {
+h2, h3 {
   margin:0;
   padding:0;
   padding-bottom:1.5rem;
@@ -95,7 +94,7 @@ form {
   /* this will push other blocks out of the way */
 
   /* colors */
-  background-color: #ffe08a;
+  background-color: #A2A77F;
   color: #4a4a4a;
 
   /* shapes */
@@ -120,7 +119,7 @@ form {
 */
 
 .box {
-  background-color: rgba(239, 239, 239, 0.40);
+  background-color: #E3E7AF;
   border: 2px dashed;
   border-radius: 4px;
 
@@ -131,18 +130,20 @@ form {
 }
 
 .left_section {
-  background-color: rgba(0, 139, 139, 0.8);
+  background-color: #a1a46b;
   flex: 0 1 auto;
   margin: 1rem;
   padding: 1.5rem;
 }
 
 .right_section {
-  background-color: rgba(255, 224, 138, 0.7);
+  background-color: #a1a46b;
   flex: 1 2 auto;
   margin: 1rem;
   align-items: center;
   max-width: 450px;
+  display: flex;
+  flex-direction: column;
 }
 
 /*
@@ -154,14 +155,18 @@ form {
 .footer {
   flex-shrink: 0;
   padding: 1rem;
-  background-color: rgba(0, 139, 139, 0.8);
+  background-color: #002E2C;
   font-size: 1.2rem;
   font-weight: 600;
 }
 
 .footer a {
-  color: rgba(255, 224, 138, 1);
+  color: rgb(165, 255, 138);
   text-decoration: underline;
+}
+
+.footer p {
+  color: rgb(255, 255, 255);
 }
 
 /*
@@ -171,10 +176,10 @@ form {
 */
 .footer a:hover {
   /* Hue, saturation, luminosity, alpha */
-  background-color: hsla(0, 0%, 90%, 0.15);
+  background-color: rgba(146, 134, 123, 0.11);
   /* red, green, blue, alpha */
-  color: rgb(246, 169, 93);
-  text-decoration: none;
+  color: rgb(160, 113, 62);
+  text-decoration: underline;
 }
 
 .subtitle {
@@ -301,5 +306,8 @@ form input {
     /* check it out by using your developer tools to shrink your screen-size */
     .container {
       background-color: rgba(204, 8, 162, 0.65);
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
     }
 }
