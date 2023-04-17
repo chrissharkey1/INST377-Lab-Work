@@ -82,6 +82,12 @@
     margin: 0; /* removing the margin on h1 tags means the header pins to the top if we move */
   }
   
+  #map {
+    width: 400px;
+    height: 300px;
+    margin-bottom: 1rem;
+  }
+
   .box {
     background-color: #e3e7af;
     border: 3.5px dashed;
